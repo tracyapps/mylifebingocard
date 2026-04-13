@@ -40,7 +40,7 @@
 </svg>
 
 			</span>
-			<span class="logo-text">My Life Bingo</span>
+			<span class="logo-text">My Life Bingo Card</span>
 		</a>
 
 		<nav class="site-nav">
