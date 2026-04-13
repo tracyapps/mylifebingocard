@@ -4,7 +4,7 @@
 	<div class="footer-inner">
 		<p>&copy; <?php echo date( 'Y' ); ?> My Life Bingo Card. Share your story, one square at a time.</p>
 		<nav class="footer-nav">
-			<a href="<?php echo esc_url( bingo_page_url( 'create' ) ); ?>">Create a Card</a>
+			<a href="https://tapps.design">tapps made this</a>
 		</nav>
 	</div>
 </footer>

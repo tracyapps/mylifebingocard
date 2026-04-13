@@ -137,7 +137,7 @@ button { cursor: pointer; font: inherit; }
 
 .creator-page {
 	display: grid;
-	grid-template-columns: 360px 1fr 280px;
+	grid-template-columns: 390px 1fr 280px;
 	gap: 32px;
 	padding-top: 32px;
 	padding-bottom: 60px;
