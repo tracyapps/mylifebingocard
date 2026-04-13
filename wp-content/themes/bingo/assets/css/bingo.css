@@ -25,7 +25,7 @@ button { cursor: pointer; font: inherit; }
 /* ── Layout ────────────────────────────────────────────────────────────────── */
 
 .site-main { flex: 1; }
-.container { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+.container { max-width: 90%; margin: 0 auto; padding: 0 24px; }
 
 /* ── Site Header ───────────────────────────────────────────────────────────── */
 
