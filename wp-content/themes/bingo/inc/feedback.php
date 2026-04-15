@@ -39,9 +39,9 @@ add_action( 'init', function () {
 		'labels'              => [
 			'name'               => 'Feedback',
 			'singular_name'      => 'Feedback Entry',
-			'edit_item'          => 'View Submission',
-			'view_item'          => 'View Submission',
-			'search_items'       => 'Search Feedback',
+			'edit_item'          => 'View',
+			'view_item'          => 'View',
+			'search_items'       => 'Search',
 			'not_found'          => 'No feedback found.',
 			'not_found_in_trash' => 'No feedback in trash.',
 		],
