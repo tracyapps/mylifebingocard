@@ -1,7 +1,7 @@
 <?php
 defined( 'ABSPATH' ) || exit;
 
-define( 'BINGO_VERSION', '1.1.0' );
+define( 'BINGO_VERSION', '1.1.1' );
 define( 'BINGO_DIR', get_template_directory() );
 define( 'BINGO_URI', get_template_directory_uri() );
 
