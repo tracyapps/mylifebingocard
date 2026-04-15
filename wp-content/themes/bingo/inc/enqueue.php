@@ -97,6 +97,26 @@ add_action( 'wp_enqueue_scripts', function () {
 		);
 		wp_localize_script( 'bingo-my-cards', 'BingoData', $shared_data );
 	}
+
+	// ── Feedback widget (all front-end pages) ─────────────────────────────────
+	wp_enqueue_script(
+		'bingo-feedback',
+		BINGO_URI . '/assets/js/feedback.js',
+		[],
+		BINGO_VERSION,
+		true
+	);
+	$fb_settings = bingo_get_feedback_settings();
+	wp_localize_script( 'bingo-feedback', 'BingoFeedback', [
+		'restUrl'  => esc_url_raw( rest_url( 'bingo/v1/feedback' ) ),
+		'nonce'    => wp_create_nonce( 'wp_rest' ),
+		'user'     => bingo_current_user_data(),
+		'settings' => [
+			'success_message'    => $fb_settings['success_message'],
+			'enable_screenshot'  => (bool) $fb_settings['enable_screenshot'],
+			'enable_browser_info' => (bool) $fb_settings['enable_browser_info'],
+		],
+	] );
 } );
 
 // ── Color themes definition (used by PHP + passed to JS) ──────────────────────

@@ -8,6 +8,8 @@ define( 'BINGO_URI', get_template_directory_uri() );
 require_once BINGO_DIR . '/inc/post-types.php';
 require_once BINGO_DIR . '/inc/suggestions.php';
 require_once BINGO_DIR . '/inc/rest-api.php';
+require_once BINGO_DIR . '/inc/feedback.php';
+require_once BINGO_DIR . '/inc/feedback-api.php';
 require_once BINGO_DIR . '/inc/enqueue.php';
 
 // ── Theme setup ──────────────────────────────────────────────────────────────
